@@ -12,8 +12,6 @@
   "devDependencies": {
     "mocha": "*",
     "expect.js": "*",
-    "sinon": "*",
-    "underscore": "*",
     "jshint": "*"
   },
   "main": "./index.js",

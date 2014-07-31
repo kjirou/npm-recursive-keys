@@ -1,6 +1,4 @@
 var expect = require('expect.js');
-var sinon = require('sinon');
-var _ = require('underscore');
 var recursiveKeys = require('../index');
 var dumpKeysRecursively = recursiveKeys.dumpKeysRecursively;
 
