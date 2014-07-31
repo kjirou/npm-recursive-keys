@@ -23,6 +23,22 @@ describe('recursive-keys', function(){
   });
 
 
+  describe('_isString', function(){
+    it('正しく動いている', function(){
+      expect(recursiveKeys._isString(null)).to.be(false);
+      expect(recursiveKeys._isString(undefined)).to.be(false);
+      expect(recursiveKeys._isString(1)).to.be(false);
+      expect(recursiveKeys._isString('')).to.be(true);
+      expect(recursiveKeys._isString('abc')).to.be(true);
+      expect(recursiveKeys._isString(new String('abc'))).to.be(true);
+      expect(recursiveKeys._isString({})).to.be(false);
+      expect(recursiveKeys._isString({a:1, b:2})).to.be(false);
+      expect(recursiveKeys._isString([])).to.be(false);
+      expect(recursiveKeys._isString(['a', 'b'])).to.be(false);
+    });
+  });
+
+
   describe('dumpKeysRecursively', function(){
     it('文字列・辞書・配列以外の場合', function(){
       expect(dumpKeysRecursively(null)).to.eql([]);
