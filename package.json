@@ -13,10 +13,12 @@
     "mocha": "*",
     "expect.js": "*",
     "sinon": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "jshint": "*"
   },
   "main": "./index.js",
   "scripts": {
-    "test": "mocha test/tests.js"
+    "test": "mocha test/tests.js",
+    "jshint": "jshint index.js lib/recursive_keys.js test/tests.js"
   }
 }
