@@ -1,0 +1,22 @@
+{
+  "name": "recursive-keys",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kjirou/npm-recursive-keys"
+  },
+  "description": "Object.keys recursively",
+  "version": "0.9.0",
+  "author": "kjirou",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*",
+    "sinon": "*",
+    "underscore": "*"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha test/tests.js"
+  }
+}
