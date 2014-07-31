@@ -41,7 +41,7 @@ console.log(dumpKeysRecursively({
 
 ### Browsers
 
-Please install by copying the [lib/recursive_keys.js](https://raw.githubusercontent.com/kjirou/npm-recursive-keys/master/lib/recursive_keys.js).
+Please install by copying the [recursive_keys.js](https://raw.githubusercontent.com/kjirou/npm-recursive-keys/master/lib/recursive_keys.js).
 
 ```
 <script src="/path/to/recursive_keys.js"></script>
