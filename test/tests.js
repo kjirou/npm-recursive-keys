@@ -19,6 +19,7 @@ describe('recursive-keys', function(){
       expect(recursiveKeys._isArray({0:1})).to.be(false);
       expect(recursiveKeys._isArray([])).to.be(true);
       expect(recursiveKeys._isArray([0, 1, 2])).to.be(true);
+      expect(recursiveKeys._isArray(new Array([]))).to.be(true);
     });
   });
 
