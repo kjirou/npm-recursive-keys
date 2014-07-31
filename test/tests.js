@@ -1,5 +1,9 @@
-var expect = require('expect.js');
-var recursiveKeys = require('../index');
+if (typeof window === 'undefined') {
+  var expect = require('expect.js');
+  var recursiveKeys = require('../index');
+}
+
+
 var dumpKeysRecursively = recursiveKeys.dumpKeysRecursively;
 
 
