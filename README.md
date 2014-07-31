@@ -20,6 +20,10 @@ Object.keys recursively
 ### Node.js
 
 ```
+npm install recursive-keys
+```
+
+```
 var dumpKeysRecursively = require('recursive-keys').dumpKeysRecursively;
 
 console.log(dumpKeysRecursively({
@@ -36,7 +40,6 @@ console.log(dumpKeysRecursively({
 //   "z",
 //   "z.a"
 // ]
-
 ```
 
 ### Browsers
