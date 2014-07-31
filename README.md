@@ -4,6 +4,54 @@ npm-recursive-keys
 Object.keys recursively
 
 
+## Supported Node.js and Browsers
+
+- `Node.js >= 0.10.0`
+- `Chrome`
+- `Firefox`
+- `Safari`
+- `Mobile Safari`
+- `PhantomJS`
+- `IE10`, `IE9`, `IE8`, `IE7` (..probably!)
+
+
+## Examples of Use
+
+### Node.js
+
+```
+var dumpKeysRecursively = require('recursive-keys').dumpKeysRecursively;
+
+console.log(dumpKeysRecursively({
+  x: 1,
+  y: [1, 2],
+  z: {a: 1}
+}));
+
+// Output:
+// [
+//   "x",
+//   "y.0",
+//   "y.1",
+//   "z",
+//   "z.a"
+// ]
+
+```
+
+### Browsers
+
+Please install by copying the [lib/recursive_keys.js](lib/recursive_keys.js).
+
+```
+<script src="/path/to/recursive_keys.js"></script>
+```
+
+```
+var dumpKeysRecursively = recursiveKeys.dumpKeysRecursively;
+```
+
+
 ## Development
 
 ### Preparation
